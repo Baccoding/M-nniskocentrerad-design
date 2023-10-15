@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>The Booze Globe Company!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="gui.css">
+        <style>.bar-block .bar-item {padding:20px}
+        </style>
+        <body style="background-color:#CC8F82;">
+            
+            
+            
+            <!-- Sidebar (hidden by default) -->
+            <div id="Sidebar" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <br>
+                <a href="startsida.html" onclick="closeNav()">Home</a>
+                <a href="products.html" onclick="closeNav()">Products</a>
+                <a href="about.html" onclick="closeNav()">About</a>
+                <a href="contactUs.html" onclick="closeNav()">Contact Us</a>
+            </div>
+
+            <!-- Top menu -->
+            <div class="top">
+            <div class="xlarge" style="max-width:auto;margin:auto">
+                <a href="javascript:void(0)" class="white padding-16 left" style="position: relative; top:10px" onclick="openNav()"> ☰ </a>
+                <a class="padding-16 right"> <img style="height:60px; width:60px" src="https://lh3.googleusercontent.com/WNDMwt66-IvB9PVS1mOXxPDJqCvlJUMc97UKpsZHQaMYROucUd3UdWF9ZNchjVk1vUzz0Ro=s85" alt="shopping cart"> </a>
+                <div class="padding-16"> <img style="height:60px; width:60px" src="https://lh3.googleusercontent.com/fP9DNqFJjtE67mkeDYI8Qi2vpkn9gWWckO0H0VyA4rC-OAsULBVhe0vxX3wTi_Reah4mpg=s85" alt="logo"> </div>
+                
+            </div>
+            </div>
+
+
+            <br><br>
+            <!-- Starting image -->
+            <div class="start-container"> 
+                <img class ="img" src="https://www.luxuryfurnituremr.com/images/tb/8/0/9/80931/14377516079791_w4000h3200.jpg" alt="Booze Globe">
+                <h3 class="content" style= "text-align:center;"> The Booze Globe Company
+                </h3>
+            </div>
+            <h1><strong> <p style= "text-align:center;">"The Booze Globe"</p><strong><h/1>
+            <p style="text-align:center;">Julrabatt -25%!
+            <br><br>
+            <a href="products.html" onclick="closeNav()">Se våra produkter här</a>
+            
+            <!-- Slideshow -->
+            <div class="slideshow-container">
+                
+            <div class="mySlides fade">
+              <img src="https://bit.ly/3GIwk3a" alt="white in room" style="height:50%; width:50%">
+            </div>
+                
+            <div class="mySlides fade">
+              <img src="https://bit.ly/3215nsu" alt="open antique in room" style="height:50%; width:50%">                     
+            </div>
+
+            <div class="mySlides fade">
+              <img src="https://bit.ly/3E0qHM1" alt="closed antique in room" style="height:50%; width:50%">               
+            </div>
+                
+
+            <script>
+                function openNav() {
+                document.getElementById("Sidebar").style.width = "250px";
+                }
+        
+                function closeNav() {
+                document.getElementById("Sidebar").style.width = "0";
+                }
+
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                slideIndex = 1
+                }    
+                slides[slideIndex-1].style.display = "block";  
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+            </script>
+
+        </body>
+        
+            
+    </head>
+</html>

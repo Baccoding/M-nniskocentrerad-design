@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>About Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="gui.css">
+        <style>.bar-block .bar-item {padding:20px}
+        </style>
+        <body style="background-color:#CC8F82;">
+            
+            
+            
+            <!-- Sidebar (hidden by default) -->
+            <div id="Sidebar" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <br>
+                <a href="startsida.html" onclick="closeNav()">Home</a>
+                <a href="products.html" onclick="closeNav()">Products</a>
+                <a href="about.html" onclick="closeNav()">About</a>
+                <a href="contactUs.html" onclick="closeNav()">Contact Us</a>
+            </div>
+
+            <!-- Top menu -->
+            <div class="top">
+            <div class="xlarge" style="max-width:auto;margin:auto">
+                <a href="javascript:void(0)" class="white padding-16 left" style="position: relative; top:10px" onclick="openNav()"> ☰ </a>
+                <a class="padding-16 right"> <img style="height:60px; width:60px" src="https://lh3.googleusercontent.com/WNDMwt66-IvB9PVS1mOXxPDJqCvlJUMc97UKpsZHQaMYROucUd3UdWF9ZNchjVk1vUzz0Ro=s85" alt="shopping cart"> </a>
+                <div class="padding-16"> <img style="height:60px; width:60px" src="https://lh3.googleusercontent.com/fP9DNqFJjtE67mkeDYI8Qi2vpkn9gWWckO0H0VyA4rC-OAsULBVhe0vxX3wTi_Reah4mpg=s85" alt="logo"> </div>
+                
+            </div>
+            </div>
+
+
+            <br><br>
+            <!-- Starting image -->
+            <div class="start-container"> 
+                <img class ="img" src="https://www.luxuryfurnituremr.com/images/tb/8/0/9/80931/14377516079791_w4000h3200.jpg" alt="Booze Globe">
+                <h3 class="contentAboutUs" style= "text-align:center;"> About Us
+                </h3>
+            </div>
+            <p style= "font-size: 20px; text-align:center;">We are a team of experts on globe making, 
+                passionate about fashion, design and innovation. 
+                Our mission is to enrich people’s lives and makes drinking more fun 
+                and enjoyable for the human family. 
+                If you would like to give us suggestions on current or future products, 
+                please contact us.
+            </p>
+                
+
+            <script>
+                function openNav() {
+                document.getElementById("Sidebar").style.width = "250px";
+                }
+        
+                function closeNav() {
+                document.getElementById("Sidebar").style.width = "0";
+                }
+
+            </script>
+
+        </body>
+        
+            
+    </head>
+</html>
